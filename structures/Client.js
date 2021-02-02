@@ -16,6 +16,6 @@ module.exports = class extends Client {
         this.commands = new Collection();
         this.aliases = new Collection();
         this.music = new Music(this);
-
+        this.config = config;
     }
 }
