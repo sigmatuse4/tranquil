@@ -10,5 +10,10 @@
   "license": "ISC",
   "repository": {
     "url": "https://github.com/ivnsrrn/tranquil"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "glob": "^7.1.6"
   }
 }
