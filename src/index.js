@@ -14,8 +14,6 @@ client.on('message', async (message) => {
 
     const args = message.content.slice(client.config.prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
-
-    console.log(cmd);
 });
 
 client.login(client.config.token);
