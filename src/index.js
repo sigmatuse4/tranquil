@@ -5,7 +5,8 @@ const client = new Client({
         shardCount: 2,
         disableMentions: 'everyone'
     },
-    token: process.env.TOKEN
+    token: process.env.TOKEN,
+    prefix: 't+'
 });
 
 client.on('ready', () => console.log(`${client.user.tag} is now online!`));
