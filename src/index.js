@@ -9,7 +9,11 @@ const client = new Client({
     prefix: 't+'
 });
 
-client.on('ready', () => console.log(`${client.user.tag} is now online!`));
+client.on('ready', () => {
+    console.log(`${client.user.tag} is now online!`);
+    client.user.setActivity(`${client.guilds.cache.size}`, { type: 'WATCHING' })
+        .catch(console.error);
+});
 client.on('message', async (message) => {
     if (message.author.bot && !message.guild.available) return undefined;
 
