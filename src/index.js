@@ -11,7 +11,7 @@ const client = new Client({
 
 client.on('ready', () => {
     console.log(`${client.user.tag} is now online!`);
-    client.user.setActivity(`${client.guilds.cache.size}`, { type: 'WATCHING' })
+    client.user.setActivity(`${client.guilds.cache.size} server(s)`, { type: 'WATCHING' })
         .catch(console.error);
 });
 client.on('message', async (message) => {
